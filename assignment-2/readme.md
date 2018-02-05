@@ -10,4 +10,4 @@ I struggled a little bit with this cycle, purely because of my lack of prior web
 - I took the optional quizzes to make sure I understood before trying the work.
 - I took my time and followed the instructions exactly.
 
-![Screenshot](./images/screenshot.png)
+![Screenshot](./images/Screenshot.png)
