@@ -1,0 +1,4 @@
+- files are broken down into little packages and sent across various routes, until it arrives and the packages are reassembled in order
+- the IP address is the actual location of where the domain name of a website lives
+- cookies are pieces of information sent to a website so it can remember you later and relay information faster the next time the site is accessed
+- protocol, domain, and path
