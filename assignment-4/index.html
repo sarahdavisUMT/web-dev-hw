@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Course Questionnaire</title>
+    <style>
+      * {font-family:arial}
+      legend {font-size:20px}
+      img, figure, figcaption, table {text-align:center;font-style:italic;margin:auto}
+      div {width:32%;display:inline-block;vertical-align:text-top;}
+      table, td, th {
+      /* -- Step 16 -- */
+      border: 2px solid gray;
+              border-collapse: collapse;
+              padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- Title Information -->
+      <img src="https://media-ed-online.github.io/intro-web-dev/img/logonav.png" alt="Media Arts Logo" title="Logo" width="100" height="100" style="float: left;"/>
+      <h1>Course Questionnaire</h1>
+      <p>Thank you for your interest in our course, <cite>Intro to Web Design!</cite><br/>
+        Please continue your registration by filling out these areas:</p>
+    </header>
+
+    <main>
+      <!-- Step 1 -->
+      <form action="http://www.example.com/register.php" method="get" id="questionnaire" class="basic-forms">
+
+      <!-- Part 1: Basic Info -->
+      <fieldset>
+        <legend>Contact Details</legend>
+        <!-- Step 2 (Name) -->
+        <p>Name:
+          <input type="text" name="First" id="name-first" placeholder="First"/>
+          <input type="text" name="MI" id="name-middle" placeholder="MI" maxlength="3" size="3"/>
+          <input type="text" name="Last" id="name-last" placeholder="Last"/>
+        </p>
+        <!-- Step 3 (E-mail) -->
+        <p>E-mail:
+          <input type="email" name="email" placeholder="you@email.com" autofocus/>
+        </p>
+
+        <!-- Step 4 (Date) -->
+        <p>Date of Birth:
+          <input type="text" name="birthdate" placeholder="mm/dd/yyyy"/>
+        </p>
+
+        <!-- Step 5 ("No" Radio) -->
+        <p>Have you taken a web design course before?</p>
+            <input id="yes" type="radio" name="prev-course" value="y">
+              <label for="yes">Yes</label>
+              <input id="no" type="radio" name="prev-course" value="n">
+                <label for="no">No</label>
+      </fieldset>
+
+
+      <br />
+
+
+      <!-- Part : Previous Experience -->
+      <fieldset>
+        <legend>Previous Experience</legend>
+        <!-- BROWSERS --><div id="browsers">
+          <figure>
+            <img src="./images/browsers.png" alt="Image of a browser" title="Broswer Icon" width="100" height="100" />
+            <figcaption>Wowsers, Browsers</figcaption>
+          </figure>
+          <p>What is your preferred browser?</p>
+          <p><i>Choose one:</i></p>
+          <!-- Step 6 -->
+          <input type="radio" name="level" value="Firefox"/> Firefox
+          <br />
+          <input type="radio" name="level" value="Chrome" checked/> Chrome
+          <br />
+          <input type="radio" name="level" value="Internet Explorer"/> Internet Explorer
+          <br />
+          <input type="radio" name="level" value="Safari"/> Safari
+          <br />
+          <input type="radio" name="level" value="Opera"/> Opera
+          <br />
+          <input type="radio" name="level" value="Microsoft Edge"/> Microsoft Edge
+          <br />
+          <input type="radio" name="level" value="Other"/> Other
+        </div>
+
+        <!-- LANGUAGES --><div id="languages">
+          <!-- Step 7 -->
+          <figure>
+            <img src="./images/languages.png" alt="language icon" title="Language Icon" width="100px" height="100px"/>
+            <figcaption>Chatting in Code</figcaption>
+          </figure>
+          <p>What languages are you familiar with?</p>
+          <p><i>Choose one or more:</i></p>
+            <!-- Step 8 -->
+          <input type="checkbox" name="languages" value="HTML" /> HTML
+          <br />
+          <input type="checkbox" name="languages" value="CSS" /> CSS
+          <br />
+          <input type="checkbox" name="languages" value="Javascript" /> Java Script
+          <br />
+          <input type="checkbox" name="languages" value="PHP" /> PHP
+          <br />
+          <input type="checkbox" name="languages" value="Ruby" /> Ruby
+          <br />
+          <input type="checkbox" name="languages" value="Python" /> Python
+          <br />
+          <input type="checkbox" name="languages" value="Other" /> Other
+        </div>
+
+        <!-- SHORT-ANSWER--><div id="short-answer">
+          <!-- Step 9 -->
+          <figure>
+            <img src="./images/experience.png" alt="tools icon" title="Language Icon" width="100px" height="100px"/>
+            <figcaption>In the Know?</figcaption>
+          </figure>
+          <p>Introduce yourself!</p>
+
+          <p>“Hi! I'm a
+            <select name="experience-level">
+            <!-- Step 10 -->
+            <option value="guppy">Guppy</option>
+            <option value="beginner">Beginner</option>
+            <option value="novice" selected>Novice</option>
+            <option value="journeyman">Journeyman</option>
+            <option value="expert">Expert</option>
+            <option value="wizard">Wizard</option>
+            </select>
+            web designer or developer.”</p>
+
+          <p>“Last year, I spent
+            <!-- Step 11 -->
+            <input type="numbers" name="experience-time"
+            id="experience-time" placeholder="##" min="0" max="12" size="2"/>
+            months studying or working in this field.”</p>
+
+          <!-- Step 12 (textarea) -->
+          <textarea name="comments" id="textarea" cols="30" rows="2">“I think my most difficult task will be..."</textarea>
+        </div>
+      </fieldset>
+
+
+      <br />
+
+
+      <!-- Part 3: Course Offerings -->
+      <!-- Steps 13-18 -->
+      <fieldset>
+        <legend>Offerings and Availability</legend>
+
+        <!-- Step 19 -->
+        <table>
+          <tr>
+            <th></th>
+            <th scope="col">Spring Semester</th>
+            <th scope="col">Summer Session</th>
+            <th scope="col">Autumn Semester</th>
+            <th scope="col">Winter Session</th>
+            <th scope="col">Special Session</th>
+           </tr>
+           <tr>
+            <th scope="row">Times (PM)</th>
+             <td>M, W 12:00-2:00</td>
+             <td>F 5:30-9:30</td>
+             <td>M, W 12:00-2:00</td>
+             <td>F 12:00-4:00</td>
+             <td>TBA</td>
+            </tr>
+            <tr>
+              <th scope="row">Seats Available</th>
+              <td>12/60</td>
+              <td>Full</td>
+              <td>Full</td>
+              <td>2/60</td>
+              <td>0/60</td>
+            </tr>
+        </table>
+
+        <p>Username:
+          <input type="text" name="username" id="username" required/>
+          <br/><br/>
+          Password:
+          <input type="password" name="password" id="password" required/>
+          <br />
+        </p>
+
+        <p>Yes! Sign me up for weekly e-mail alerts.
+          <input type="checkbox" name="newsletter" value="y" checked/>
+        </p>
+        <input type="image" src="./images/reg-button.png" alt="subscribe button image" width="100"/>
+      </fieldset>
+      </form>
+    </main>
+    <!-- Step 20 -->
+    <img src="./images/registration-station.jpg" alt="registration station image" title="Register Today!" width="500" height="333"/>
+  </body>
+</html>
