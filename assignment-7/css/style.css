@@ -1,0 +1,30 @@
+body {
+  background-color: #0C4D69;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #D7F7FD;
+}
+
+h1 {
+  font-size: 48;
+}
+
+h2 {
+  font-size: 36;
+}
+
+h3 {
+  font-size: 32;
+}
+
+p, .excerpt {
+  text-align: center;
+  font-size: 20;
+  color: #F0F7FF;
+}
+
+.read-more-link {
+  color: #D7F7FD;
+}

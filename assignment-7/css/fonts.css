@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Slab');
+
+@font-face {
+  font-family: 'Amatic SC';
+}
+
+@font-face {
+  font-family: 'Josefin Slab', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Amatic SC';
+}
+
+p, excerpt {
+  font-family: 'Josefin Slab', georgia;
+  line-height: 1.2;
+  text-transform: none;
+}
